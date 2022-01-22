@@ -2,14 +2,16 @@ import Head from 'next/head';
 import Image from 'next/image';
 import styles from '../styles/Home.module.scss';
 import Link from 'next/link';
+import Nav from '../components/Nav/Nav';
+import { Jumbotron } from '../components/Jumbotron/Jumbotron';
 
 export default function Home() {
 	return (
 		<>
-			<div>check</div>
-			<h1>
-				Read my <Link href="/posts/first-post">first blog</Link>
-			</h1>
+			<main>
+				<Nav />
+				<Jumbotron heading="Cats World" />
+			</main>
 		</>
 	);
 }
