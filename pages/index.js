@@ -4,13 +4,15 @@ import styles from '../styles/Home.module.scss';
 import Link from 'next/link';
 import Nav from '../components/Nav/Nav';
 import { Jumbotron } from '../components/Jumbotron/Jumbotron';
+import DefaultLayout from '../layouts/Default';
 
 export default function Home() {
 	return (
 		<>
 			<main>
-				<Nav />
-				<Jumbotron heading="Cats World" />
+				<DefaultLayout>
+					<Jumbotron heading="Cats World" />
+				</DefaultLayout>
 			</main>
 		</>
 	);

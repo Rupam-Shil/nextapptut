@@ -8,7 +8,6 @@ export default function Index() {
 		const response = await fetch('/api/cats');
 		const data = await response.json();
 		setCats(data.cats);
-		console.log(cats);
 	};
 
 	useEffect(() => {
